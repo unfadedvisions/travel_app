@@ -1,0 +1,23 @@
+<h1> Welcome to my travel page</h1>
+<p>I am the bat</p>
+
+<p><% @homestate %></p>
+
+<p><%= @homestate %></p>
+<ul>
+<% @countries.each do |country| %>
+	<li><%= country %></li>
+	<% end %>
+	<!-- <p>
+		<%#= image_tag 'batman.jpg', alt: 'happy llama', id: 'llama_pic' %>
+ </p> -->
+ <%# @pictures.each do |pic| %>
+  <!-- <p> -->
+  	<%#= image_tag pic %>
+  <!-- </p> -->
+  <%# end %>
+<% @picture_hash.each do |name, descr| %>
+<p>
+<%= image_tag name, alt: descr %>
+</p>
+<% end %>
